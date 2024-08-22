@@ -1,15 +1,17 @@
-import { Input } from '@chakra-ui/react'
-import { useState } from 'react'
-export const SearchBar = () => {
+import { Input } from '@chakra-ui/react';
+import React from 'react';
 
-  const [search, setSearch] = useState<string>('')
-  return (
-    <>
-      <Input 
-        placeholder='How can I help you today?'
-        value={search}
-        onChange={(e)=>setSearch(e.target.value)}
-      />
-    </>
-  )
+interface SearchBarProps {
+  search: string;
+  setSearch: (search: string) => void;
 }
+
+export const SearchBar: React.FC<SearchBarProps> = ({ search, setSearch }) => {
+  return (
+    <Input 
+      placeholder='How can I help you today?'
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  );
+};
