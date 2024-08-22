@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "*Insert your api_key here*"
 
 const config = {
     headers: {
