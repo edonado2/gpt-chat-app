@@ -1,11 +1,11 @@
 import axios, { AxiosResponse } from "axios";
 
-const OPENAI_API_KEY = "*Insert your api_key here*"
+const API_KEY = "*Insert your api_key here*"
 
 const config = {
     headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${OPENAI_API_KEY}`
+        "Authorization": `Bearer ${API_KEY}`
     }
 };
 
